@@ -1,6 +1,7 @@
 package com.tingeso.demo.models;
 
 public class Pais {
+    private Int ID_DatosPaises;
     private String nombre;
     private String capital;
     private int poblacion;
