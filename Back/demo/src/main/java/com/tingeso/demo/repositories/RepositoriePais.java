@@ -5,7 +5,8 @@ import com.tingeso.demo.models.Pais;
 
 public interface RepositoriePais {
     public List<Pais> getAll();
-    public Pais createPais(Pais pais);
-     
-}
 
+    public List<Pais> getCapitalByPais(String pais);
+
+    public List<Pais> getPoblacionByCapital(String capital);
+}

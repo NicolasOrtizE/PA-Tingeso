@@ -1,31 +1,31 @@
 package com.tingeso.demo.models;
 
 public class Pais {
-    private int ID_DatosPaises;
-    private String nombre;
+    private int ID_DB;
+    private String pais;
     private String capital;
     private int poblacion;
 
-    public Pais(String nombre, String capital, int poblacion) {
-        this.nombre = nombre;
+    public Pais(String pais, String capital, int poblacion) {
+        this.pais = pais;
         this.capital = capital;
         this.poblacion = poblacion;
     }
 
     public Integer getId() {
-        return ID_DatosPaises;
+        return ID_DB;
     }
 
-    public void setId(Integer ID_DatosPaises) {
-        this.ID_DatosPaises = ID_DatosPaises;
+    public void setId(Integer ID_DB) {
+        this.ID_DB = ID_DB;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getPais() {
+        return pais;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setPais(String pais) {
+        this.pais = pais;
     }
 
     public String getCapital() {

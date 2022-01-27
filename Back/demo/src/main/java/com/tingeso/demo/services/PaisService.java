@@ -7,7 +7,6 @@ import java.util.List;
 
 @CrossOrigin
 @RestController
-@RequestMapping(value = "estados")
 public class PaisService {
 
     private final RepositoriePais repositoriePais;
@@ -22,9 +21,4 @@ public class PaisService {
         return repositoriePais.getAll();
     }
 
-    @PostMapping("/newPais")
-    @ResponseBody
-    public Pais createPais(@RequestBody Pais pais) {
-        return repositoriePais.createPais(pais);
-    }
 }
